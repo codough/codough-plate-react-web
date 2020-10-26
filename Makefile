@@ -1,17 +1,17 @@
 setup:
 	npm install
 
-lint:
+lint: setup
 	yarn eslint src --ext .ts,.tsx
 
-autocorrect:
+autocorrect: setup
 	yarn eslint --fix src --ext .ts,.tsx
 
-build:
+build: setup
 	npm run build
 
-test:
+test: setup
 	npm run test
 
-start:
+start: setup
 	npm run start
