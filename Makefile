@@ -1,23 +1,23 @@
-.PHONY: setup
+.PHONY:
 setup:
 	npm install
 
 .PHONY: lint
-lint: setup
+lint:
 	yarn eslint src --ext .ts,.tsx
 
 .PHONY: autocorrect
-autocorrect: setup
+autocorrect:
 	yarn eslint --fix src --ext .ts,.tsx
 
 .PHONY: build
-build: setup
+build:
 	npm run build
 
 .PHONY: test
-test: setup
+test:
 	npm run test
 
 .PHONY: start
-start: setup
+start:
 	npm run start
